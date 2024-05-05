@@ -5,7 +5,13 @@
 }
 
 .container {
-  position: relative; /* Make sure the container is positioned */
+  width: 1133px;
+  height: 744px;
+  opacity: 0.5;
+  background-image: url("../src/assests/backgroung.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat ;
+
 }
 
 .Main--background--img {
@@ -19,10 +25,11 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 174.2%; /* Cover the entire container */
-  height: 99.5%; /* Cover the entire container */
+  top: 2;
+  left: 2;
+  width: 1133px;
+  height: 744px;
+  gap: 0px; /* Cover the entire container */
   background: linear-gradient(to top, rgba(59, 59, 59, 0.5), rgba(255, 255, 255, 0.1)); /* Add a transparent gradient from gray to white */
 }
 
@@ -160,15 +167,6 @@
 
 }
 
-.Main--plate1 {
-  position: absolute;
-  /* Other styling for overlaying elements */
-  z-index: 1; /* Ensure it's on top of the background */
-  top: 271px;
-  left: 66px;
-  gap: 0px;
-  margin: 0px;
-}
 
 .Main--text1{
   position: absolute;

@@ -1,5 +1,5 @@
 import React from 'react';
-import ChosenPlates from './ChosenPlates'
+import plate from './ChosenPlates'
 
 function OrdersPage() {
   // State to store orders matrix
@@ -19,9 +19,7 @@ function OrdersPage() {
   );
 }
 
-// OrderMatrix component to display orders in a matrix
-// OrderMatrix component to display orders in a matrix
-// OrderMatrix component to display orders in a matrix
+
 function OrderMatrix({ ordersMatrix }) {
     return (
       <div className="order-container">
@@ -34,6 +32,4 @@ function OrderMatrix({ ordersMatrix }) {
     );
   }
   
-  
-
 export default OrdersPage;

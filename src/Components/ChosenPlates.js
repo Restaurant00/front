@@ -35,7 +35,6 @@ export default function ChosenPlates() {
     // Function to handle deleting a comment
     function handleDeleteComment(plateName) {
         setIsVisible2(false);
-        // Reset quantity and comments
         setComments({});
     }
 
@@ -45,20 +44,24 @@ export default function ChosenPlates() {
         setQty(0);
         setComments({});
     }
+
+
 const comment = (<input className="Main--comment"
                     type="text"
                     placeholder="Please, just a litlle bit spice...."
                     onChange={(e) => handleAddComment("Pizza Margherita", e.target.value)}
                 />
 )
+
+
 const plate = (
-    <div>
+    <div className="platecontainer">
                 <h2 className="Main--text3">Pizza Margherita</h2>
                 <span className="Main--text31"> { 1500 * qty } DA </span>
                 <div onClick={() => handleIncreaseQtyProduct()} className="Main--plus">+</div>
                 <div onClick={() => handleDecreaseQtyProduct()} className="Main--minus">-</div>
-                <span className="Main--quantity">{qty}</span>
-                <div alt="quantity" className="Main--Quantity"></div>
+                <span className="quantity">{qty}</span>
+                <div alt="quantity" className="quantity-box"></div>
                 {/* Comment box */}
                 <input className="Main--comment"
                     type="text"
@@ -66,12 +69,12 @@ const plate = (
                     onChange={(e) => handleAddComment("Pizza Margherita", e.target.value)}
                 />
                 {/* Delete comment button */}
-                        <img
-                            src={omit}
-                            alt="omit"
-                            className="Main--omit"
-                            onClick={() => handleDeleteComment("Pizza Margherita")}
-                        />
+                <img
+                    src={omit}
+                    alt="omit"
+                    className="Main--omit"
+                    onClick={() => handleDeleteComment("Pizza Margherita")}
+                />
                 
                 <img
                     src={bin}
@@ -85,19 +88,8 @@ const plate = (
 )
 
     return (
-        <>
-            <p className="text2">Vous pouvez modifier votre commande ici .Une fois vos modifications terminées, vous devrez confirmer votre commande en cliquant sur "Paiement".</p>
+        <div className="plates-container">
             {isVisible && plate}
-            {isVisible2 && comment}
-            {/*<div>
-                <div className="Main--plate1" style={{backgroundImage: `url(${productProps.urlImage})`}}  alt="OrderedPlates"></div>
-                <span className="Main--text3">{productProps.name} </span>
-                <span className="Main--text31">{`${productProps.devise} ${productProps.price * qty}`}</span>
-                <div onClick={() => handleDecreaseQtyProduct(productProps)} className="Main--minus">-</div>
-                <span className="Main--quantity">{qty}</span>
-                <div onClick={() => handleIncreaseQtyProduct(productProps)} className="Main--plus">+</div>
-            </div>*/}
-
-        </>
+        </div>
     )
 }
