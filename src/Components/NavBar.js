@@ -1,10 +1,10 @@
-// Navbar.js 
+// Navbar.js
 import React from 'react';
-import userIcon from '../assests/majesticons_user-line.png';
-import trolleyIcon from '../assests/Vector.png';
-import rectangle from '../assests/Rectangle 10.png';
+import userIcon from '../Assets/majesticons_user-line.png';
+import trolleyIcon from '../Assets/Vector.png';
+import rectangle from '../Assets/Rectangle 10.png';
 
-export default function NavBar ({ menuItems }) {
+export default function Navbar ({ menuItems }) {
     return (
         <nav className='navbar'>
             <img src={userIcon} alt='user' className='user--icon'/>
