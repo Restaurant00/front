@@ -2,12 +2,13 @@ import React from 'react'
 import crown from "../Assets/crown.png"
 import discountIcon from "../Assets/discountIcon.png"
 import lock from "../Assets/lock.png"
+import "./PackageCard.css"
 
-function PackageCard({name, percentage, userPoints , points}) {
+function PackageCard({name, percentage, userPoints , points, Background, Shadow}) {
     const unlocked = userPoints >= points;
   return (
     <div className='packageCardContainer'>
-                <div className="packageBox">
+                <div className="packageBox" style={{background: Background, boxShadow: Shadow}}>
                 {
                     !unlocked && (<div className="packageOverlay"></div>
                     )

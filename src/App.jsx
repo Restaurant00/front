@@ -1,14 +1,15 @@
-// App.js
 import React from 'react';
-import './App.css';
+import './Components/container.css';
 import Navbar from './Components/Navbar';
-import Main from './Components/Main';
-import ProgressBar from './Components/ProgressBar';
+import Main from './Components/Package';
+
 function App() {
   const menuItems = ["Menu", "À propos", "Offres et promotions"];
   const title = "VOTRE COMMANDE";
   const description = "Vous pouvez modifier votre commande ici. Une fois vos modifications terminées, vous devrez confirmer votre commande en cliquant sur 'Paiement'.";
-  const userPoints = 6000;
+
+  const userPoints = 5000;
+  
   return (
     <div className="tabletContainer">
       <div>

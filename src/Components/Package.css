@@ -1,0 +1,59 @@
+.contentPackages {
+    padding-top: 50px;
+    display: flex;
+    z-index: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  }
+
+  .contentPackages .Main--text {
+    margin-top: 75px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center  ;
+    color: rgba(30, 30, 30, 1);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contentPackages .text {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(30, 30, 30, 1);
+    line-height: 1.3;
+    letter-spacing: 0.8px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .mainContentPackages {
+    width: 100%;
+    z-index: 1;
+    background-image: url("../Assets/background +design.png");
+    background-position: center center;
+    background-size: cover;
+    
+  }
+
+  .packages {
+    padding-top: 100px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 3;
+    top:-30px;
+  }
+
+
+
+
+  

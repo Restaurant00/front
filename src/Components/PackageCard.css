@@ -1,0 +1,92 @@
+.packageCardContainer {
+    width: 230px;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    /* padding: 25px ; */
+    border-radius: 15px;
+  
+    flex-direction: column;
+  }
+  
+  .packageBox {
+    position: relative;
+    width: 90%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+  
+  .packageBox .alert {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    width: 110px;
+    background-color: #FAF6E7;
+    padding: 10px;
+    height: 40px;
+    border-radius: 15px;
+    background: rgba(250, 246, 231, 0.8);
+    box-shadow: 4.84px -4.84px 4.84px 2px rgba(190, 187, 176, 0.3) inset;
+  }
+  .packageBox .discount--icon{
+    width: 31px;
+    height: 31px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+  }
+  
+  .packageBox2 {
+    position: relative;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: -20px;
+    z-index: 50;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(250, 246, 231, 1);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .packageBox2 .level-name {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(30, 30, 30, 1);
+    margin-bottom: 0; 
+  }
+  .packageBox2 .level-points {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(30, 30, 30, 1);
+    margin-top: 10px; 
+  }
+  
+  
+  .packageCardContainer .packageOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 15px 15px;
+    background: rgba(30, 30, 30, 0.4);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  .packageCardContainer .lock {
+    width: 38px;
+    position: absolute;
+    height: 48px;
+    top: 90px;
+  }

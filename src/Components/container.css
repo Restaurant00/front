@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+  
+  .tabletContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }

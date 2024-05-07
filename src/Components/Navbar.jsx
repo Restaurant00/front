@@ -1,8 +1,8 @@
-// Navbar.js
 import React from 'react';
 import userIcon from '../Assets/majesticons_user-line.png';
 import trolleyIcon from '../Assets/Vector.png';
 import rectangle from '../Assets/Rectangle 10.png';
+import "./Navbar.css"
 
 export default function Navbar ({ menuItems }) {
     return (
@@ -18,3 +18,4 @@ export default function Navbar ({ menuItems }) {
         </nav>
     )
 }
+
