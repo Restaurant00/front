@@ -1,0 +1,99 @@
+.container {
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    padding-block: 90px ;
+    background: url("src/assets/background +design.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-inline: 110px;
+    gap: 18px;
+    overflow-y: scroll;
+}
+.text {
+    text-align: start;
+    font-size: 22px;
+}
+select {
+    padding-block: 10px;
+    padding-inline: 25px 90px;
+    border-radius: 15px;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    border: solid 1px rgba(255, 185, 44, 1);
+    background-color: rgba(250, 246, 231, 1);
+    color : rgba(30, 30, 30, 0.5) ;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.plaint-box {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 25px;
+align-self: center;
+padding-inline: 70px;
+padding-block: 20px;
+background: var(--but, rgba(217, 217, 217, 0.17));
+border: solid 1px rgba(255, 185, 44, 1);
+border-radius: 15px;
+
+}
+.btn {
+    color: black;
+    background: var(--primary);
+    font-size: 16px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    align-self: center;
+    border: none;
+    margin-block: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+
+
+.plaint-input {
+    width: 800px; /* Set initial width to 80% */
+    max-width: 831px; /* Maximum width */
+    height: 169px; /* Set initial height to 40px */
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: solid 1px rgba(255, 185, 44, 1);    border-radius: 8px; /* Adjust border radius as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background: rgba(250, 246, 231, 1);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .plaint-input {
+        width: 100%; /* Make input width 100% for screens narrower than 600px */
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+/* Styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the thumb */
+    border-radius: 5px; /* Border radius of the thumb */
+}
+
+/* Styles for the scrollbar track when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the thumb on hover */
+}
