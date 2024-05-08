@@ -3,30 +3,30 @@ import ProgressBar from "./ProgressBar";
 import PackageCard from "./PackageCard";
 import "./Package.css"
 
-export default function Package({userPoints, title, description}) {
+export default function Package({userpoints, title, description}) {
 
     const packages = [
         {percentage:4,
-             name:"Basic" ,
-             points:500,
+             name:"bronze" ,
+             points:200,
               
         },
         {percentage:10,
             name:"silver" ,
-            points:1000,
+            points:800,
              
        },
        {percentage:15,
         name:"golden" ,
-        points:2500,     
+        points:1500,     
     },
     {percentage:30,
         name:"platinium" ,
-        points:5000,     
+        points:2300,     
     },
     {percentage:50,
         name:"diamond" ,
-        points:9000,     
+        points:3300,     
     }
     ]
 

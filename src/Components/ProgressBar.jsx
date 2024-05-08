@@ -7,7 +7,7 @@ export default function ProgressBar ({userPoints=3000}) {
     const [maxWidth, setMaxWidth] = useState(0);
 
     useEffect (()=> {
-        const newMaxWidth = (userPoints * 100) / 9000;
+        const newMaxWidth = (userPoints * 100) / 3300;
         setMaxWidth(newMaxWidth);
 
         let width = 1;
@@ -29,7 +29,7 @@ export default function ProgressBar ({userPoints=3000}) {
 
     return(
         <div className="progressBarContainer">
-            <div className="Points--display">{userPoints} / 9000</div>
+            <div className="Points--display">{userPoints} / 3300</div>
             <div className="progressBarFill" style={{ width: `${maxWidth}%` }} ref={elemRef}></div>
             <img className="progressBar" alt="progressBar" src={progressBar1}/>
         </div>
